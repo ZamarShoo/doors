@@ -13,7 +13,7 @@
             <div class="left-col">
                 <h2 class="spacing__bottom">Входная дверь Hormann Thermo 65</h2>
                 <img id="own-door" src="./img/door-own.png" alt="">
-                <img id="door" src="./img/white-door-smooth.png" alt="">
+                <img class="door" id="door1" src="./img/white-door-smooth.png" alt="">
             </div>
             <div class="right-col">
                 <div class="parametres">
@@ -28,8 +28,8 @@
                                 <td class="parametres--param">от 1875 до 2250 мм</td>
                             </tr>
                             <tr>
-                                <td class="parametres--bold">Цвет и отделка:</td>
-                                <td class="parametres--param">белый RAL 9016б гладкое устойчивое покрытие</td>
+                                <td class="parametres--bold">Цвет и Мотив:</td>
+                                <td id="param-1" class="parametres--param">белый RAL 9016 мотив 010</td>
                             </tr>
                         </tbody>
                     </table>
@@ -37,52 +37,52 @@
                 <p class="parametres--bold spacing">Выберите тип:</p>
                 <div class="check--type">
                     <label class="check--element">
-                        <input name="type-selected" type="radio" onclick="">
+                        <input name="type-selected" type="radio" onclick="changeType('smooth', 1, 99000)">
                         <img class="door-type" id="block-1" src="./img/white-door-smooth.png" alt="">
                     </label>
                     <label class="check--element">
-                        <input name="type-selected" type="radio" onclick="">
+                        <input name="type-selected" type="radio" onclick="changeType('small', 1, 99000)">
                         <img class="door-type" id="block-2" src="./img/white-door-small.png" alt="">
                     </label>
                     <label class="check--element">
-                        <input name="type-selected" type="radio" onclick="">
+                        <input name="type-selected" type="radio" onclick="changeType('big', 1, 99000)">
                         <img class="door-type" id="block-3" src="./img/white-door-big.png" alt="">
                     </label>
                 </div>
                 <p class="parametres--bold spacing">Выберите цвет:</p>
                 <div class="check--type check--color">
                     <label class="check--element">
-                        <input name="color" value="white" type="radio">
+                        <input name="color"  type="radio" onclick="changeColorOne('white', 0)">
                         <img src="./img/white.jpg" alt="">
                     </label>
                     <label class="check--element">
-                        <input name="color" value="light-gray" type="radio">
+                        <input name="color" type="radio" onclick="changeColorOne('blue', 0)">
                         <img src="./img/blue.jpg" alt="">
                     </label>
                     <label class="check--element">
-                        <input name="color" value="gray" type="radio">
+                        <input name="color" type="radio" onclick="changeColorOne('brown', 0)">
                         <img src="./img/brown.jpg" alt="">
                     </label>
                     <label class="check--element">
-                        <input name="color" value="dark-gray" type="radio">
+                        <input name="color" type="radio" onclick="changeColorOne('gray', 11500)">
                         <img src="./img/gray.jpg" alt="">
                     </label>
                     <label class="check--element">
-                        <input name="color" value="dark-green" type="radio">
+                        <input name="color" type="radio" onclick="changeColorOne('tree', 11500)">
                         <img src="./img/tree.jpg" alt="">
                     </label>
                     <label class="check--element">
-                        <input name="color" value="white" type="radio">
+                        <input name="color" type="radio" onclick="changeColorOne('dark-tree', 11500)">
                         <img src="./img/dark-tree.jpg" alt="">
                     </label>
                     <label class="check--element">
-                        <input name="color" value="white" type="radio">
+                        <input name="color"type="radio" onclick="changeColorOne('dark-brown', 11500)">
                         <img src="./img/dark-brown.jpg" alt="">
                     </label>
                 </div>
                 <div class="price--door">
                     <div class="price--left">
-                        <h2><span id="price">107 500</span> &#8381</h2>
+                        <h2><span id="price-1">99000</span> &#8381</h2>
                         <p class="parametres--param param__light param__smaller">Без доставки и монтажа</p>
                     </div>
                     <a id="price--door--button"><span>Заказать</span></a>
@@ -101,7 +101,7 @@
         <div class="left-col">
             <h2 class="spacing__bottom">Входная дверь Hormann Thermo 65</h2>
             <img id="own-door" src="./img/door-own.png" alt="">
-            <img id="door" src="./img/white-door-smooth.png" alt="">
+            <img class="door" id="door2" src="./img/white-door-circle.png" alt="">
         </div>
         <div class="right-col">
             <div class="parametres">
@@ -116,8 +116,8 @@
                             <td class="parametres--param">от 1875 до 2250 мм</td>
                         </tr>
                         <tr>
-                            <td class="parametres--bold">Цвет и отделка:</td>
-                            <td class="parametres--param">белый RAL 9016б гладкое устойчивое покрытие</td>
+                            <td class="parametres--bold">Цвет и Мотив:</td>
+                            <td id="param-2" class="parametres--param">белый RAL 9016 мотив 700</td>
                         </tr>
                     </tbody>
                 </table>
@@ -125,52 +125,53 @@
             <p class="parametres--bold spacing">Выберите тип:</p>
             <div class="check--type">
                 <label class="check--element">
-                    <input name="type-selected" type="radio" onclick="">
-                    <img class="door-type" id="block-1" src="./img/white-door-smooth.png" alt="">
+                    <input name="type-selected" type="radio" onclick="changeType('circle', 2, 122000)">
+                    <img class="door-type" id="block-4" src="./img/white-door-circle.png" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="type-selected" type="radio" onclick="">
-                    <img class="door-type" id="block-2" src="./img/white-door-small.png" alt="">
+                    <input name="type-selected" type="radio" onclick="changeType('square', 2, 122000)">
+                    <img class="door-type" id="block-5" src="./img/white-door-square.png" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="type-selected" type="radio" onclick="">
-                    <img class="door-type" id="block-3" src="./img/white-door-big.png" alt="">
+                    <input name="type-selected" type="radio" onclick="changeType('moon', 2, 122000)">
+                    <img class="door-type" id="block-6" src="./img/white-door-moon.png" alt="">
                 </label>
             </div>
             <p class="parametres--bold spacing">Выберите цвет:</p>
             <div class="check--type check--color">
                 <label class="check--element">
-                    <input name="color" value="white" type="radio">
+                    <input name="color" type="radio" onclick="changeColorTwo('white', 0)">
                     <img src="./img/white.jpg" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="color" value="light-gray" type="radio">
+                    <input name="color" type="radio" onclick="changeColorTwo('blue', 0)">
                     <img src="./img/blue.jpg" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="color" value="gray" type="radio">
+                    <input name="color" type="radio" onclick="changeColorTwo('brown', 0)">
                     <img src="./img/brown.jpg" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="color" value="dark-gray" type="radio">
+                    <input name="color" type="radio" onclick="changeColorTwo('gray', 11500)">
                     <img src="./img/gray.jpg" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="color" value="dark-green" type="radio">
+                    <input name="color" type="radio" onclick="changeColorTwo('tree', 11500)">
                     <img src="./img/tree.jpg" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="color" value="white" type="radio">
+                    <input name="color" type="radio" onclick="changeColorTwo('dark-tree', 11500)">
                     <img src="./img/dark-tree.jpg" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="color" value="white" type="radio">
+                    <input name="color" type="radio" onclick="changeColorTwo('dark-brown', 11500)">
                     <img src="./img/dark-brown.jpg" alt="">
                 </label>
+                
             </div>
             <div class="price--door">
                 <div class="price--left">
-                    <h2><span id="price">107 500</span> &#8381</h2>
+                    <h2><span id="price-2">122000</span> &#8381</h2>
                     <p class="parametres--param param__light param__smaller">Без доставки и монтажа</p>
                 </div>
                 <a id="price--door--button"><span>Заказать</span></a>
@@ -188,7 +189,7 @@
         <div class="left-col">
             <h2 class="spacing__bottom">Входная дверь Hormann Thermo 65</h2>
             <img id="own-door" src="./img/door-own.png" alt="">
-            <img id="door" src="./img/white-door-smooth.png" alt="">
+            <img class="door" id="door3" src="./img/white-door-rectangle.png" alt="">
         </div>
         <div class="right-col">
             <div class="parametres">
@@ -203,61 +204,57 @@
                             <td class="parametres--param">от 1875 до 2250 мм</td>
                         </tr>
                         <tr>
-                            <td class="parametres--bold">Цвет и отделка:</td>
-                            <td class="parametres--param">белый RAL 9016б гладкое устойчивое покрытие</td>
+                            <td class="parametres--bold">Цвет и Мотив:</td>
+                            <td id="param-3" class="parametres--param">белый RAL 9016 мотив 700А</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <p class="parametres--bold spacing">Выберите тип:</p>
-            <div class="check--type">
+            <div class="check--type check--type__last">
                 <label class="check--element">
-                    <input name="type-selected" type="radio" onclick="">
-                    <img class="door-type" id="block-1" src="./img/white-door-smooth.png" alt="">
+                    <input name="type-selected" type="radio" onclick="changeType('rectangle', 3, 101000)">
+                    <img class="door-type" id="block-7" src="./img/white-door-rectangle.png" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="type-selected" type="radio" onclick="">
-                    <img class="door-type" id="block-2" src="./img/white-door-small.png" alt="">
-                </label>
-                <label class="check--element">
-                    <input name="type-selected" type="radio" onclick="">
-                    <img class="door-type" id="block-3" src="./img/white-door-big.png" alt="">
+                    <input name="type-selected" type="radio" onclick="changeType('transparent', 3, 101000)">
+                    <img class="door-type" id="block-8" src="./img/white-door-transparent.png" alt="">
                 </label>
             </div>
             <p class="parametres--bold spacing">Выберите цвет:</p>
             <div class="check--type check--color">
                 <label class="check--element">
-                    <input name="color" value="white" type="radio">
+                    <input name="color" type="radio" onclick="changeColorThree('white', 0)">
                     <img src="./img/white.jpg" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="color" value="light-gray" type="radio">
+                    <input name="color" type="radio" onclick="changeColorThree('blue', 5500)">
                     <img src="./img/blue.jpg" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="color" value="gray" type="radio">
+                    <input name="color" type="radio" onclick="changeColorThree('brown', 5500)">
                     <img src="./img/brown.jpg" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="color" value="dark-gray" type="radio">
+                    <input name="color" type="radio" onclick="changeColorThree('gray', 11500)">
                     <img src="./img/gray.jpg" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="color" value="dark-green" type="radio">
+                    <input name="color" type="radio" onclick="changeColorThree('tree', 11500)">
                     <img src="./img/tree.jpg" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="color" value="white" type="radio">
+                    <input name="color" type="radio" onclick="changeColorThree('dark-tree', 11500)">
                     <img src="./img/dark-tree.jpg" alt="">
                 </label>
                 <label class="check--element">
-                    <input name="color" value="white" type="radio">
+                    <input name="color" type="radio" onclick="changeColorThree('dark-brown', 11500)">
                     <img src="./img/dark-brown.jpg" alt="">
                 </label>
-            </div>
+                </div>
             <div class="price--door">
                 <div class="price--left">
-                    <h2><span id="price">107 500</span> &#8381</h2>
+                    <h2><span id="price-3">101000</span> &#8381</h2>
                     <p class="parametres--param param__light param__smaller">Без доставки и монтажа</p>
                 </div>
                 <a id="price--door--button"><span>Заказать</span></a>
@@ -273,5 +270,7 @@
     
     </div>
     </div>
+
+    <script src="./js/door-script.js"></script>
 </body>
 </html>

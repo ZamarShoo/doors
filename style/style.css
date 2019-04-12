@@ -52,7 +52,7 @@ h2 {
   position: absolute;
 }
 
-#door {
+.door {
   position: absolute;
   margin-left: 123px;
   margin-top: 23px;
@@ -104,6 +104,10 @@ input[type="radio"]:checked + img {
   width: 340px;
   height: 170px;
   justify-content: space-between;
+}
+
+.check--type__last {
+  width: 200px;
 }
 
 .check--color {
